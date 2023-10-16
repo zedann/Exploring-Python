@@ -175,7 +175,6 @@ it is mean that we cant replace it with hash value so everytime we call the key 
 # heaps -> minMax heap
 
 
-import heapq
 # minHeap = []
 # heapq.heappush(minHeap, 3)
 # heapq.heappush(minHeap, 5)
@@ -192,3 +191,33 @@ import heapq
 # while arr:
 #     print(heapq.heappop(arr))
 
+# def fuc(n,m):
+#     return n * m;
+
+# def outer(a,b):
+#     c = "c"
+#     def inner():
+#         return a + b + c
+#     return inner()
+
+
+
+
+import heapq
+class MyClass:
+    # constructor
+    def __init__(self, nums):
+        # create member number
+        self.nums = nums
+        self.size = len(nums)
+
+    def getLength(self):
+        return self.size
+
+    def getDoubleLength(self):
+        return 2*self.getLength()
+
+
+nums = [1, 2, 3, 4]
+obj = MyClass(nums)
+print(obj.getDoubleLength())
