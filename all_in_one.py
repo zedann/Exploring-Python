@@ -221,3 +221,25 @@ class MyClass:
 nums = [1, 2, 3, 4]
 obj = MyClass(nums)
 print(obj.getDoubleLength())
+
+class A:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        self.country = "EGY"
+    def getCountry(self):
+        return self.country
+    
+class B(A):
+    def __init__(self):
+        A.__init__(self)
+
+oB = B("zedan",26)
+
+print(oB)
+    
+    
+oA = A("zedan",21)
+
+print(oA.getCountry())
+
